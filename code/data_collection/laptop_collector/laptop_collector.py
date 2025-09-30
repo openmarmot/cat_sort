@@ -15,7 +15,7 @@ server_ip = input("Enter the server IP address: ")
 SERVER_URL = f'http://{server_ip}:5000/upload'
 
 # Capture interval in seconds
-INTERVAL = 5  # Adjust as needed
+INTERVAL = 30  # Adjust as needed
 
 cap = cv2.VideoCapture(0)  # 0 for default webcam
 success_count=0

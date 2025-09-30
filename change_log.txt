@@ -3,4 +3,6 @@ cat_sort change log
 
 ----------------------------------
 Sept 29 2025
-- getting started with the data collection code 
+- initial client and server apps for data collection
+
+serve is designed for a nvidia environment. I'd like to see how it runs on cpu and amd igpu (if possible)
