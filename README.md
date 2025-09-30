@@ -33,6 +33,6 @@ see chang_log.txt for more details
 
 I have the initial client and server apps created for capturing images for the data set.
 
-![screenshot](/readme_images/building_cat_dataset.jpeg "Building cat dataset")
+![screenshot](/readme_images/building_cat_dataset.png "Building cat dataset")
 
 
