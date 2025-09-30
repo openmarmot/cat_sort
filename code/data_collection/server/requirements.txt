@@ -1,0 +1,4 @@
+flask # web server
+ultralytics # object detection
+opencv-python # byte-> image conversion
+numpy # byte-> image conversion
