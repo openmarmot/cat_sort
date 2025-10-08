@@ -1,13 +1,16 @@
 cat_sort change log 
 
 ----------------------------------
+Oct 8 2025
+- minor updates 
+
+----------------------------------
 Oct 7 2025
 - readme updates 
 - started working on a additional filter for data_preprocessing
 
 the data_collection programs have worked quite well but I'd like to filter 
 people out of the data set before I go further. 
-
 
 ----------------------------------
 Sept 29 2025

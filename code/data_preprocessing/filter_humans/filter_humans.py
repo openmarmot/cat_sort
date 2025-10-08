@@ -1,8 +1,11 @@
+# built in
 import os
 import shutil
-from ultralytics import YOLO
-import cv2
 import uuid
+
+# external
+from ultralytics import YOLO
+import cv2 # from opencv-python package
 
 # Prompt for input folder
 input_folder = input("Enter the path to the input folder: ").strip()
