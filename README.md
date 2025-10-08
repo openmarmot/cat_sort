@@ -28,10 +28,40 @@ Data Labelling
 Model Training
 - train a model to identify the cats
 
-## current status
-see chang_log.txt for more details
+## Data Collection
+### laptop_collector
+This program is designed to run on a laptop and take images with a built in web cam.
+I've tested it on a Framework 13 laptop running Fedora 42. I've noted that it continues 
+to run even when the screen locks, and if the web cam light is lit up that means the program is running.
 
-I have the initial client and server apps created for capturing images for the data set.
+### server
+This is the server program. It is meant to run somewhere with a Nivida graphics card.
+I tested it on a desktop running Fedora 42 with a Nvidia 4000 Ada.
+
+It is very light weight and takes about 30ms (self reported) to process a image.
+
+It's main purpose is to receive images from the client program, detect a cat in them, 
+and save the images that have a cat in them.
+
+I've found that the current model works very well at detecting my cats, even in poor lighting.
+
+## Data Preprocessing
+
+### filter_humans
+This script checks through a folder of images and sorts folders based on whether a human 
+is detected. This could have been done as part of collection, but this way I get to view 
+what I'm filtering out and make the choice myself.
+
+this script is not done
+
+### identify_duplicates
+This is to be done. the data_collection programs result in a large amount of near 
+duplicate images when a cat doesn't move and triggers a series of photos. These need 
+to be identified and filtered out.
+
+## current status
+see change_log.txt for more details
+
 
 ![screenshot](/readme_images/building_cat_dataset.png "Building cat dataset")
 
