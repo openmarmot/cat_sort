@@ -2,7 +2,10 @@ cat_sort change log
 
 ----------------------------------
 Oct 8 2025
-- minor updates 
+- finished + tested filter_humans code 
+
+I might have to try bumping up the model size - for this filter. 
+looks like there were a lot of human shots that it didn't detect 
 
 ----------------------------------
 Oct 7 2025

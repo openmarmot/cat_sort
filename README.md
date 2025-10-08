@@ -52,7 +52,8 @@ This script checks through a folder of images and sorts folders based on whether
 is detected. This could have been done as part of collection, but this way I get to view 
 what I'm filtering out and make the choice myself.
 
-this script is not done
+In my testing the nano model is quite good at detecting humans but not perfect. Out of 250 images it detected humans in there were a couple that were just cats, so you will want to 
+manually check what it is matching.
 
 ### identify_duplicates
 This is to be done. the data_collection programs result in a large amount of near 
