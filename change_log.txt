@@ -1,6 +1,11 @@
 cat_sort change log 
 
 ----------------------------------
+Oct 19 2025
+- switched to the 'm' model for filter_humans.py to get more accurate results. 
+
+'m' medium sized model is still crazy fast on my nvidia 4000 ada. 
+----------------------------------
 Oct 8 2025
 - finished + tested filter_humans code 
 
