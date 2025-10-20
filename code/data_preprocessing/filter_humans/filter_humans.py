@@ -11,7 +11,7 @@ import cv2 # from opencv-python package
 input_folder = input("Enter the path to the input folder: ").strip()
 
 # Load YOLO model (uses GPU if available)
-model = YOLO('yolo11n.pt')  # You can switch to '*8m.pt' for better accuracy if needed
+model = YOLO('yolo11m.pt')  # m model for greater accuracy
 
 # Create output folder with random suffix in the current working directory
 suffix = str(uuid.uuid4())[:8]  # Short random suffix
