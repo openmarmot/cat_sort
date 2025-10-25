@@ -1,6 +1,8 @@
 #!/bin/bash
 # Script to set up a Python virtual environment and run an existing program
 
+# NOTE - This version of the script is intended for the NVIDIA DGX Spark System
+
 # Define the virtual environment directory
 VENV_DIR="venv"
 
@@ -28,7 +30,8 @@ pip install --upgrade pip
 
 # Install dependencies
 echo "Installing dependencies..."
-pip install -r requirements.txt
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu130
+pip3 install -r requirements.txt
 
 # Run the existing Python script
 echo "Running program..."

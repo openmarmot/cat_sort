@@ -1,6 +1,15 @@
 cat_sort change log 
 
 ----------------------------------
+Oct 24 2025
+- did some initial testing on moving the project over to my new Nvidia DGX Spark
+- added run_dgx_spark.sh for filter_humans.py and adjusted the python script to force gpu usage 
+Interestingly 'sh script.sh' fails on Ubuntu due to path issues as it calls a different shell.
+
+todo 
+- adapt and test laptop_collector on the spark 
+
+----------------------------------
 Oct 19 2025
 - switched to the 'm' model for filter_humans.py to get more accurate results. 
 

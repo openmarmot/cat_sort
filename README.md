@@ -28,13 +28,23 @@ Data Labelling
 Model Training
 - train a model to identify the cats
 
+## note on running code 
+Run scripts by making the file executable (chmod+x script.sh) and then running with ./script.sh.
+Avoid using sh script.sh as it uses a different shell in Ubuntu and can cause issues.
+
 ## Data Collection
+
 ### laptop_collector
+Tested on:
+- Framework 13 laptop running Fedora 42
+
 This program is designed to run on a laptop and take images with a built in web cam.
-I've tested it on a Framework 13 laptop running Fedora 42. I've noted that it continues 
-to run even when the screen locks, and if the web cam light is lit up that means the program is running.
+I've noted that it continues to run even when the screen locks, and if the web cam light is lit up that means the program is running.
 
 ### server
+Tested on :
+- Nvidia 4000 ADA 
+
 This is the server program. It is meant to run somewhere with a Nivida graphics card.
 I tested it on a desktop running Fedora 42 with a Nvidia 4000 Ada.
 
@@ -48,6 +58,10 @@ I've found that the current model works very well at detecting my cats, even in 
 ## Data Preprocessing
 
 ### filter_humans
+Tested on :
+- Nvidia 4000 ADA 
+- Nvidia DGX Spark
+
 This script checks through a folder of images and sorts folders based on whether a human 
 is detected. This could have been done as part of collection, but this way I get to view 
 what I'm filtering out and make the choice myself.

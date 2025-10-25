@@ -2,16 +2,26 @@
 import os
 import shutil
 import uuid
+import torch
 
 # external
 from ultralytics import YOLO
 import cv2 # from opencv-python package
 
+# Load YOLO model on GPU 
+model = YOLO('yolo11m.pt').to('cuda') # m model for greater accuracy
+
+# OR Force CPU
+#model = YOLO('yolo11m.pt').to('cpu')  # Force CPU
+
+print('--------------------------------------------')
+print(f"Ultralytics is running on : {model.device}")
+if torch.cuda.is_available():
+    print(f"Torch GPU : {torch.cuda.get_device_name(0)}")
+print('--------------------------------------------')
+
 # Prompt for input folder
 input_folder = input("Enter the path to the input folder: ").strip()
-
-# Load YOLO model (uses GPU if available)
-model = YOLO('yolo11m.pt')  # m model for greater accuracy
 
 # Create output folder with random suffix in the current working directory
 suffix = str(uuid.uuid4())[:8]  # Short random suffix

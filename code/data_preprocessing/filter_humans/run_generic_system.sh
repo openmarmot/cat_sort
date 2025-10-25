@@ -1,6 +1,8 @@
 #!/bin/bash
 # Script to set up a Python virtual environment and run an existing program
 
+# NOTE - this is for a standard system, ideally with Nvidia drivers and CUDA installed
+
 # Define the virtual environment directory
 VENV_DIR="venv"
 
@@ -32,7 +34,7 @@ pip install -r requirements.txt
 
 # Run the existing Python script
 echo "Running program..."
-python3 server.py
+python filter_humans.py
 
 # Deactivate the virtual environment
 echo "Deactivating virtual environment..."
