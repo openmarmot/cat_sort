@@ -1,6 +1,10 @@
 cat_sort change log 
 
 ----------------------------------
+Oct 25 2025
+- some work on deduplication code 
+
+----------------------------------
 Oct 24 2025
 - did some initial testing on moving the project over to my new Nvidia DGX Spark
 - added run_dgx_spark.sh for filter_humans.py and adjusted the python script to force gpu usage 
