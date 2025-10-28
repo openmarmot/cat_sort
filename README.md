@@ -69,10 +69,13 @@ what I'm filtering out and make the choice myself.
 In my testing the nano model is quite good at detecting humans but not perfect. Out of 250 images it detected humans in there were a couple that were just cats, so you will want to 
 manually check what it is matching.
 
-### identify_duplicates
-This is to be done. the data_collection programs result in a large amount of near 
-duplicate images when a cat doesn't move and triggers a series of photos. These need 
-to be identified and filtered out.
+### deduplicate
+Tested on :
+- Nvidia DGX Spark (only needs CPU)
+
+The data_collection programs result in a lot of near duplicate images when a cat isn't moving much, and those need to be filtered out.
+The deduplicate program runs a fast CPU based hash comparison to detect duplicates. 
+In my initial testing the SIMILARITY_THRESHOLD of 10 definitely worked, but probably classified too many images as duplicate.
 
 ## current status
 see change_log.txt for more details
